@@ -1,12 +1,12 @@
 CC=g++
 CFLAGS=-g
 ALLOBJ=main.o
-DEPS=indexLanguages.h
+DEPS=indexLanguages.h BPage.h
 
 %.o: %.cpp $(DEPS)
 	$(CC) -c -o $@ $< $(CFLAGS)
 
-IndexLangages: $(ALLOBJ)
+IndexLanguages: $(ALLOBJ)
 	$(CC) -o $@ $^ $(CFLAGS)
 .PHONY: clean
 

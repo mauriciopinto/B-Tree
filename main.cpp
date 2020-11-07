@@ -1,5 +1,6 @@
 #include "indexLanguages.h"
 
 int main () {
-	return 0;
+	BTreeIndex index ("dicts/italian.txt", 3);
+	index.execute (italiano);
 }
